@@ -1,0 +1,26 @@
+[
+    {
+        "sobject": "SBQQ__PriceRule__c",
+        "saveRefs": true,
+        "resolvedRefs": false,
+        "files": [
+            "SBQQ__PriceRule__c.json"
+        ]
+    },
+    {
+        "sobject": "SBQQ__PriceCondition__c",
+        "saveRefs": false,
+        "resolvedRefs": true,
+        "files": [
+            "SBQQ__PriceCondition__c.json"
+        ]
+    },
+    {
+        "sobject": "SBQQ__PriceAction__c",
+        "saveRefs": false,
+        "resolvedRefs": true,
+        "files": [
+            "SBQQ__PriceAction__c.json"
+        ]
+    }
+]

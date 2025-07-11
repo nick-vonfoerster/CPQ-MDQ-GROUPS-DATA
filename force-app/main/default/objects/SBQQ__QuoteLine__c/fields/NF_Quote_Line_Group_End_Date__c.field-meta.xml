@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_Quote_Line_Group_End_Date__c</fullName>
+    <formula>IF(
+NOT(ISBLANK(SBQQ__Group__r.SBQQ__SubscriptionTerm__c)),
+SBQQ__Group__r.NF_True_End_Date__c,
+SBQQ__Group__r.SBQQ__EndDate__c
+)</formula>
+    <label>Quote Line Group End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

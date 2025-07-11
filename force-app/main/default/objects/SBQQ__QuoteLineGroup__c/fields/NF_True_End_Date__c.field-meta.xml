@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_True_End_Date__c</fullName>
+    <formula>IF(
+ISBLANK(SBQQ__EndDate__c),
+DATE(
+YEAR(SBQQ__StartDate__c) + FLOOR((MONTH(SBQQ__StartDate__c) + SBQQ__SubscriptionTerm__c - 1) / 12),
+MOD(
+MONTH(SBQQ__StartDate__c) + SBQQ__SubscriptionTerm__c - 1 +
+IF(
+DAY(SBQQ__StartDate__c) &gt;
+CASE(
+MOD(MONTH(SBQQ__StartDate__c) + SBQQ__SubscriptionTerm__c - 1, 12) + 1,
+2,
+IF(
+MOD(YEAR(SBQQ__StartDate__c), 4) = 0 &amp;&amp;
+(MOD(YEAR(SBQQ__StartDate__c), 100) != 0 || MOD(YEAR(SBQQ__StartDate__c), 400) = 0),
+29,
+28
+),
+4, 30,
+6, 30,
+9, 30,
+11, 30,
+31
+),
+1,
+0
+),
+12
+) + 1,
+IF(
+DAY(SBQQ__StartDate__c) &gt;
+CASE(
+MOD(MONTH(SBQQ__StartDate__c) + SBQQ__SubscriptionTerm__c - 1, 12) + 1,
+2,
+IF(
+MOD(YEAR(SBQQ__StartDate__c), 4) = 0 &amp;&amp;
+(MOD(YEAR(SBQQ__StartDate__c), 100) != 0 || MOD(YEAR(SBQQ__StartDate__c), 400) = 0),
+29,
+28
+),
+4, 30,
+6, 30,
+9, 30,
+11, 30,
+31
+),
+1,
+DAY(SBQQ__StartDate__c)
+)
+) - 1,
+SBQQ__EndDate__c
+)</formula>
+    <label>True End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

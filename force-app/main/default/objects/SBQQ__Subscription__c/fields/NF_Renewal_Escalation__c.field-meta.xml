@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF_Renewal_Escalation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (NF_Group_Segment_Index__c = 1, (1+SBQQ__Contract__r.NF_Renewal_Uplift_Rate__c)^1, 
+IF (NF_Group_Segment_Index__c = 2, (1+SBQQ__Contract__r.NF_Renewal_Uplift_Rate__c)^2, 
+IF (NF_Group_Segment_Index__c = 3, (1+SBQQ__Contract__r.NF_Renewal_Uplift_Rate__c)^3, 
+IF (NF_Group_Segment_Index__c = 4, (1+SBQQ__Contract__r.NF_Renewal_Uplift_Rate__c)^4,
+IF (NF_Group_Segment_Index__c = 5, (1+SBQQ__Contract__r.NF_Renewal_Uplift_Rate__c)^5,				
+0)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Renewal Escalation %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

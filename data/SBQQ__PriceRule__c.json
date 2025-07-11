@@ -1,0 +1,209 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef1"
+            },
+            "Name": "Quote Line - Renewal List Price",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004OpdMAE",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "On Calculate",
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef2"
+            },
+            "Name": "Quote Line - Group Renewal Dates",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004OpnMAE",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "On Calculate",
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef3"
+            },
+            "Name": "Quote Line - Group Segment Key (Group = 1)",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004F9XMAU",
+            "SBQQ__AdvancedCondition__c": "(5 OR 10) AND 20 AND 30",
+            "SBQQ__ConditionsMet__c": "Custom",
+            "SBQQ__EvaluationEvent__c": "On Calculate",
+            "SBQQ__EvaluationOrder__c": 15,
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef4"
+            },
+            "Name": "Quote Line - Set Group Segment Index Changed",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004LfFMAU",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "After Calculate",
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef5"
+            },
+            "Name": "Quote Line - Line Number (Group = 1)",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004FDAMA2",
+            "SBQQ__AdvancedCondition__c": "(5 OR 10) AND 20 AND 30",
+            "SBQQ__ConditionsMet__c": "Custom",
+            "SBQQ__EvaluationEvent__c": "On Calculate",
+            "SBQQ__EvaluationOrder__c": 5,
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef6"
+            },
+            "Name": "Quote Line - Group Segment Key (Group > 1)",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004FGnMAM",
+            "SBQQ__AdvancedCondition__c": "(5 OR 10) AND 20 AND 30",
+            "SBQQ__ConditionsMet__c": "Custom",
+            "SBQQ__EvaluationEvent__c": "On Calculate",
+            "SBQQ__EvaluationOrder__c": 15,
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef7"
+            },
+            "Name": "Quote Line - Line Number (Group > 1)",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004FG9MAM",
+            "SBQQ__AdvancedCondition__c": "(5 OR 10) AND 20 AND 30",
+            "SBQQ__ConditionsMet__c": "Custom",
+            "SBQQ__EvaluationEvent__c": "On Calculate",
+            "SBQQ__EvaluationOrder__c": 5,
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef8"
+            },
+            "Name": "Quote Line - Renewal Uplift/Escalation",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004NrDMAU",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "Before Calculate",
+            "SBQQ__EvaluationOrder__c": 20,
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef9"
+            },
+            "Name": "Quote Line - Override Price Escalation",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004NrIMAU",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "Before Calculate",
+            "SBQQ__EvaluationOrder__c": 30,
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef10"
+            },
+            "Name": "Quote Line - New/Amendment - Populate QL Escalation %",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004NqUMAU",
+            "SBQQ__AdvancedCondition__c": "(10 AND 40 AND 50 AND 60) OR (20 AND 40 AND 50 AND 60 AND 70) OR (30 AND 40 AND 50 AND 60 AND 80)",
+            "SBQQ__ConditionsMet__c": "Custom",
+            "SBQQ__EvaluationEvent__c": "Before Calculate",
+            "SBQQ__EvaluationOrder__c": 10,
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef11"
+            },
+            "Name": "Quote Line - NULL Additional Discount Renewal",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004OqHMAU",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "On Calculate",
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef12"
+            },
+            "Name": "Quote Line - Amendment - Set Line Dates",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004OVnMAM",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "Before Calculate",
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef13"
+            },
+            "Name": "Quote Line  - Quote Line Group End Dates",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004OViMAM",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "Before Calculate",
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef14"
+            },
+            "Name": "Quote Line - Set Amendment List Price on Quote Line",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004CMXMA2",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "On Calculate",
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef15"
+            },
+            "Name": "Quote Line - Group Segment Index/Label",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004CMDMA2",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "On Initialization",
+            "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef16"
+            },
+            "Name": "Quote Line - Reset Clone Line",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004GsOMAU",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "After Calculate",
+            "SBQQ__EvaluationOrder__c": 5,
+            "SBQQ__TargetObject__c": "Calculator"
+        }
+    ]
+}

@@ -1,0 +1,282 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef1"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef2",
+            "NF_External_Id__c": "a0WKe000001m4YRMAY",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__EndDate__c",
+            "SBQQ__Formula__c": "SBQQ__RenewedSubscription__r.NF_Subscription_Renewal_End_Date__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef2"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef1",
+            "NF_External_Id__c": "a0WKe000001m4X9MAI",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__SpecialPrice__c",
+            "SBQQ__Formula__c": "(SBQQ__ListPrice__c * NF_Quote_Escalation__c) + SBQQ__ListPrice__c",
+            "SBQQ__Order__c": 10
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef3"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef1",
+            "NF_External_Id__c": "a0WKe000001m4TvMAI",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__SpecialPriceType__c",
+            "SBQQ__Value__c": "Custom",
+            "SBQQ__Order__c": 5
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef4"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef2",
+            "NF_External_Id__c": "a0WKe000001m4YHMAY",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__StartDate__c",
+            "SBQQ__Formula__c": "SBQQ__RenewedSubscription__r.NF_Subscription_Renewal_Start_Date__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef5"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef1",
+            "NF_External_Id__c": "a0WKe000001nitxMAA",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__ListPrice__c",
+            "SBQQ__Formula__c": "SBQQ__RenewedSubscription__r.SBQQ__RenewalPrice__c",
+            "SBQQ__Order__c": 1
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef6"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef3",
+            "NF_External_Id__c": "a0WKe00000084YXMAY",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Key__c",
+            "SBQQ__Formula__c": "RIGHT(SBQQ__ProductOption__r.Name, LEN(SBQQ__ProductOption__r.Name) - 3)&\"-\"&SBQQ__RequiredBy__r.SBQQ__Number__c&\"-\"&RIGHT(SBQQ__Quote__r.Name, LEN(SBQQ__Quote__r.Name) - 2)"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef7"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef15",
+            "NF_External_Id__c": "a0WKe000001SD42MAG",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Label__c",
+            "SBQQ__Formula__c": "CASE(\r\nSBQQ__Group__r.NF_Group_Segment_Index__c,\r\n\"Segment 1\", \"Year 1\",\r\n\"Segment 2\", \"Year 2\",\r\n\"Segment 3\", \"Year 3\",\r\n\"Segment 4\", \"Year 4\",\r\n\"Segment 5\", \"Year 5\",\r\n\"Segment 6\", \"Year 6\",\r\nNULL\r\n)"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef8"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef4",
+            "NF_External_Id__c": "a0WKe000001SD5ZMAW",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index_Changed__c",
+            "SBQQ__ValueField__c": "NF_Group_Segment_Index__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef9"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef5",
+            "NF_External_Id__c": "a0WKe00000088RzMAI",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Line_Number__c",
+            "SBQQ__Formula__c": "SBQQ__Number__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef10"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef6",
+            "NF_External_Id__c": "a0WKe0000008AuFMAU",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Key__c",
+            "SBQQ__Formula__c": "RIGHT(SBQQ__ProductOption__r.Name, LEN(SBQQ__ProductOption__r.Name) - 3)&\"-\"&SBQQ__RequiredBy__r.NF_Line_Number__c&\"-\"&RIGHT(SBQQ__Quote__r.Name, LEN(SBQQ__Quote__r.Name) - 2)"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef11"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef7",
+            "NF_External_Id__c": "a0WKe0000008AACMA2",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Line_Number__c",
+            "SBQQ__Formula__c": "SBQQ__Number__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef12"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef11",
+            "NF_External_Id__c": "a0WKe000001m4t5MAA",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__AdditionalDiscount__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef13"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef11",
+            "NF_External_Id__c": "a0WKe000001m4tAMAQ",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__AdditionalDiscountAmount__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef14"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef10",
+            "NF_External_Id__c": "a0WKe000001lBBXMA2",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Quote_Escalation__c",
+            "SBQQ__Formula__c": "SBQQ__Quote__r.NF_Escalation__c/100"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef15"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef8",
+            "NF_External_Id__c": "a0WKe000001lBfwMAE",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Quote_Escalation__c",
+            "SBQQ__ValueField__c": "SBQQ__Uplift__c",
+            "SBQQ__Order__c": 10
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef16"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef9",
+            "NF_External_Id__c": "a0WKe000001lBh9MAE",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Quote_Escalation__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef17"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef8",
+            "NF_External_Id__c": "a0WKe000001lBg6MAE",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Renewal_Escalation_Set__c",
+            "SBQQ__Value__c": "TRUE",
+            "SBQQ__Order__c": 20
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef18"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef12",
+            "NF_External_Id__c": "a0WKe000001lkU0MAI",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__SubscriptionTerm__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef19"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef13",
+            "NF_External_Id__c": "a0WKe000001lkS9MAI",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__EndDate__c",
+            "SBQQ__ValueField__c": "NF_Quote_Line_Group_End_Date__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef20"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef12",
+            "NF_External_Id__c": "a0WKe000001lkTbMAI",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__EndDate__c",
+            "SBQQ__Formula__c": "IF(SBQQ__Group__r.NF_Current_Year_Group__c = TRUE, \r\n   SBQQ__Group__r.SBQQ__EndDate__c, \r\n   Quote_Line_Group_End_Date__c)"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef21"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef12",
+            "NF_External_Id__c": "a0WKe000001lkU5MAI",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__StartDate__c",
+            "SBQQ__Formula__c": "IF(SBQQ__Group__r.NF_Current_Year_Group__c = TRUE,\r\nSBQQ__Group__r.SBQQ__StartDate__c,\r\nQuote_Line_Group_Start_Date__c)"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef22"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef14",
+            "NF_External_Id__c": "a0WKe0000004CLEMA2",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__SpecialPriceType__c",
+            "SBQQ__Value__c": "Custom",
+            "SBQQ__Order__c": 10
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef23"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef14",
+            "NF_External_Id__c": "a0WKe0000004CL9MAM",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__SpecialPrice__c",
+            "SBQQ__Formula__c": "SBQQ__UpgradedSubscription__r.SBQQ__SpecialPrice__c",
+            "SBQQ__Order__c": 20
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef24"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef15",
+            "NF_External_Id__c": "a0WKe0000004CJhMAM",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index__c",
+            "SBQQ__Formula__c": "CASE(\r\nSBQQ__Group__r.NF_Group_Segment_Index__c,\r\n\"Segment 1\", 1,\r\n\"Segment 2\", 2,\r\n\"Segment 3\", 3,\r\n\"Segment 4\", 4,\r\n\"Segment 5\", 5,\r\nNULL\r\n)"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef25"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef16",
+            "NF_External_Id__c": "a0WKe00000172KGMAY",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Cloned_Lines__c",
+            "SBQQ__Value__c": "False"
+        }
+    ]
+}

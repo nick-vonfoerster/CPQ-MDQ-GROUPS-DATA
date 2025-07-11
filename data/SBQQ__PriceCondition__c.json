@@ -1,0 +1,618 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef1"
+            },
+            "NF_External_Id__c": "a0XKe0000008WBFMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef2",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Renewal"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef2"
+            },
+            "NF_External_Id__c": "a0XKe0000008WBKMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef2",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__RenewedSubscription__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef3"
+            },
+            "NF_External_Id__c": "a0XKe0000008T4OMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef3",
+            "SBQQ__Index__c": 10,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Key__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef4"
+            },
+            "NF_External_Id__c": "a0XKe0000008TelMAE",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef6",
+            "SBQQ__Index__c": 5,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Cloned_Lines__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "True"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef5"
+            },
+            "NF_External_Id__c": "a0XKe0000008TeqMAE",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef16",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Cloned_Lines__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "True"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef6"
+            },
+            "NF_External_Id__c": "a0XKe0000008T4TMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef3",
+            "SBQQ__Index__c": 20,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef7"
+            },
+            "NF_External_Id__c": "a0XKe0000008UytMAE",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef4",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index_Changed__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Formula",
+            "SBQQ__FilterFormula__c": "NF_Group_Segment_Index__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef8"
+            },
+            "NF_External_Id__c": "a0XKe0000008T9JMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef5",
+            "SBQQ__Index__c": 30,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef9"
+            },
+            "NF_External_Id__c": "a0XKe0000008T9EMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef5",
+            "SBQQ__Index__c": 20,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Bundle_Header_Product__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "True"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef10"
+            },
+            "NF_External_Id__c": "a0XKe0000008THhMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef6",
+            "SBQQ__Index__c": 10,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Key__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef11"
+            },
+            "NF_External_Id__c": "a0XKe0000008THiMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef6",
+            "SBQQ__Index__c": 20,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef12"
+            },
+            "NF_External_Id__c": "a0XKe0000008THkMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef6",
+            "SBQQ__Index__c": 30,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Bundle_Header_Product__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "False"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef13"
+            },
+            "NF_External_Id__c": "a0XKe0000008TAHMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef7",
+            "SBQQ__Index__c": 10,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Line_Number__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef14"
+            },
+            "NF_External_Id__c": "a0XKe0000008T9FMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef5",
+            "SBQQ__Index__c": 10,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Line_Number__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef15"
+            },
+            "NF_External_Id__c": "a0XKe0000008T99MAE",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef3",
+            "SBQQ__Index__c": 30,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Bundle_Header_Product__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "False"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef16"
+            },
+            "NF_External_Id__c": "a0XKe0000008TA3MAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef7",
+            "SBQQ__Index__c": 30,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Bundle_Header_Product__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "True"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef17"
+            },
+            "NF_External_Id__c": "a0XKe0000008TA5MAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef7",
+            "SBQQ__Index__c": 20,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef18"
+            },
+            "NF_External_Id__c": "a0XKe0000008WAqMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef1",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Renewal"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef19"
+            },
+            "NF_External_Id__c": "a0XKe0000008WArMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef1",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__RenewedSubscription__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef20"
+            },
+            "NF_External_Id__c": "a0XKe0000008WBeMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef11",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Renewal"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef21"
+            },
+            "NF_External_Id__c": "a0XKe0000008WAvMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef1",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "1"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef22"
+            },
+            "NF_External_Id__c": "a0XKe0000008VNYMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef10",
+            "SBQQ__Index__c": 60,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Escalateable__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "TRUE"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef23"
+            },
+            "NF_External_Id__c": "a0XKe0000008VNJMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef10",
+            "SBQQ__Index__c": 70,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__PriorQuantity__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef24"
+            },
+            "NF_External_Id__c": "a0XKe0000008VNTMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef10",
+            "SBQQ__Index__c": 50,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index__c",
+            "SBQQ__Operator__c": "greater or equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "2"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef25"
+            },
+            "NF_External_Id__c": "a0XKe0000008VN9MAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef10",
+            "SBQQ__Index__c": 10,
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Quote"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef26"
+            },
+            "NF_External_Id__c": "a0XKe0000008VOgMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef9",
+            "SBQQ__Index__c": 20,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index_Changed__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Formula",
+            "SBQQ__FilterFormula__c": "NF_Group_Segment_Index__c"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef27"
+            },
+            "NF_External_Id__c": "a0XKe0000008VN4MAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef10",
+            "SBQQ__Index__c": 30,
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Renewal"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef28"
+            },
+            "NF_External_Id__c": "a0XKe0000008VN5MAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef10",
+            "SBQQ__Index__c": 40,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Quote_Escalation__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef29"
+            },
+            "NF_External_Id__c": "a0XKe0000008VOCMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef8",
+            "SBQQ__Index__c": 10,
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "NF_Renewed_Contract__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef30"
+            },
+            "NF_External_Id__c": "a0XKe0000008VObMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef8",
+            "SBQQ__Index__c": 50,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Renewal_Escalation_Set__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef31"
+            },
+            "NF_External_Id__c": "a0XKe0000008VOHMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef8",
+            "SBQQ__Index__c": 20,
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Renewal"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef32"
+            },
+            "NF_External_Id__c": "a0XKe0000008VNOMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef10",
+            "SBQQ__Index__c": 80,
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "NF_Renewed_Contract__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef33"
+            },
+            "NF_External_Id__c": "a0XKe0000008VOlMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef9",
+            "SBQQ__Index__c": 10,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Override_Price__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "TRUE"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef34"
+            },
+            "NF_External_Id__c": "a0XKe0000008VNEMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef10",
+            "SBQQ__Index__c": 20,
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Amendment"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef35"
+            },
+            "NF_External_Id__c": "a0XKe0000008VOMMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef8",
+            "SBQQ__Index__c": 30,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Escalateable__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "TRUE"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef36"
+            },
+            "NF_External_Id__c": "a0XKe0000008VOWMA2",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef8",
+            "SBQQ__Index__c": 40,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__RenewedSubscription__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef37"
+            },
+            "NF_External_Id__c": "a0XKe0000008W0lMAE",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef13",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Amendment"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef38"
+            },
+            "NF_External_Id__c": "a0XKe0000008WBjMAM",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef11",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__RenewedSubscription__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef39"
+            },
+            "NF_External_Id__c": "a0XKe0000008VfJMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef12",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__UpgradedSubscription__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef40"
+            },
+            "NF_External_Id__c": "a0XKe0000008VfTMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef12",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "NF_Quote_Line_Groups_Updated__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "False"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef41"
+            },
+            "NF_External_Id__c": "a0XKe0000008VfOMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef12",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Amendment"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef42"
+            },
+            "NF_External_Id__c": "a0XKe0000008QldMAE",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef15",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "SBQQ__Group__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Value"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef43"
+            },
+            "NF_External_Id__c": "a0XKe0000008QsoMAE",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef14",
+            "SBQQ__Object__c": "Quote",
+            "SBQQ__Field__c": "SBQQ__Type__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "Amendment"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef44"
+            },
+            "NF_External_Id__c": "a0XKe0000008TeWMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef5",
+            "SBQQ__Index__c": 5,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Cloned_Lines__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "True"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef45"
+            },
+            "NF_External_Id__c": "a0XKe0000008TegMAE",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef7",
+            "SBQQ__Index__c": 5,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Cloned_Lines__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "True"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef46"
+            },
+            "NF_External_Id__c": "a0XKe0000008TebMAE",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef3",
+            "SBQQ__Index__c": 5,
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Cloned_Lines__c",
+            "SBQQ__Operator__c": "equals",
+            "SBQQ__FilterType__c": "Value",
+            "SBQQ__Value__c": "True"
+        }
+    ]
+}
