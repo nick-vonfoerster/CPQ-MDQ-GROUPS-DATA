@@ -210,7 +210,7 @@
                 "type": "SBQQ__PriceRule__c",
                 "referenceId": "SBQQ__PriceRule__cRef17"
             },
-            "Name": "Quote Line - Override Price Reset",
+            "Name": "Quote Line - Reset Override Price",
             "SBQQ__Active__c": true,
             "NF_External_Id__c": "a0YKe0000004QrnMAE",
             "SBQQ__ConditionsMet__c": "All",
