@@ -617,7 +617,7 @@
         {
             "attributes": {
                 "type": "SBQQ__PriceCondition__c",
-                "referenceId": "SBQQ__PriceCondition__cRef26"
+                "referenceId": "SBQQ__PriceCondition__cRef47"
             },
             "NF_External_Id__c": "a0XKe0000008Y1UMAU",
             "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef17",
