@@ -277,6 +277,17 @@
             "SBQQ__TargetObject__c": "Quote Line",
             "SBQQ__Field__c": "NF_Cloned_Lines__c",
             "SBQQ__Value__c": "False"
+        },
+            {
+            "attributes": {
+                "type": "SBQQ__PriceAction__c",
+                "referenceId": "SBQQ__PriceAction__cRef26"
+            },
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef17",
+            "NF_External_Id__c": "a0WKe000001nzpYMAQ",
+            "SBQQ__TargetObject__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Override_Price__c",
+            "SBQQ__Value__c": "False"
         }
     ]
 }

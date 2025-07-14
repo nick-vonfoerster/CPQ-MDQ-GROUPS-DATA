@@ -613,6 +613,19 @@
             "SBQQ__Operator__c": "equals",
             "SBQQ__FilterType__c": "Value",
             "SBQQ__Value__c": "True"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceCondition__c",
+                "referenceId": "SBQQ__PriceCondition__cRef26"
+            },
+            "NF_External_Id__c": "a0XKe0000008Y1UMAU",
+            "SBQQ__Rule__c": "@SBQQ__PriceRule__cRef17",
+            "SBQQ__Object__c": "Quote Line",
+            "SBQQ__Field__c": "NF_Group_Segment_Index_Changed__c",
+            "SBQQ__Operator__c": "not equals",
+            "SBQQ__FilterType__c": "Formula",
+            "SBQQ__FilterFormula__c": "NF_Group_Segment_Index__c"
         }
     ]
 }

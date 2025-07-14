@@ -204,6 +204,19 @@
             "SBQQ__EvaluationEvent__c": "After Calculate",
             "SBQQ__EvaluationOrder__c": 5,
             "SBQQ__TargetObject__c": "Calculator"
+        },
+        {
+            "attributes": {
+                "type": "SBQQ__PriceRule__c",
+                "referenceId": "SBQQ__PriceRule__cRef17"
+            },
+            "Name": "Quote Line - Override Price Reset",
+            "SBQQ__Active__c": true,
+            "NF_External_Id__c": "a0YKe0000004QrnMAE",
+            "SBQQ__ConditionsMet__c": "All",
+            "SBQQ__EvaluationEvent__c": "Before Calculate",
+            "SBQQ__EvaluationOrder__c": 5,
+            "SBQQ__TargetObject__c": "Calculator"
         }
     ]
 }
