@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="https://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>Account.NF_Billing_Contact__c</members>
+		<members>Account.NF_Accounting_Contact__c</members>
 		<members>Account.NF_PartnerAccount__c</members>
 		<members>Contract.NF_Accounting_Contact__c</members>
 		<members>Contract.NF_Debook_Auto_Renew__c</members>
 		<members>Contract.NF_Renewal_Uplift_Rate__c</members>
+		<members>Order.NF_Accounting_Contact__c</members>
+		<members>Order.NF_Debook_Auto_Renew__c</members>
+		<members>Order.NF_Renewal_Uplift_Rate__c</members>
 		<members>Opportunity.NF_Billing_Contact_Name__c</members>
 		<members>Opportunity.NF_Billing_Contact__c</members>
 		<members>Opportunity.NF_Default_Escalation__c</members>
@@ -47,8 +50,12 @@
         <members>SBQQ__Subscription__c.NF_Subscription_Renewal_End_Date__c</members>
         <members>SBQQ__Subscription__c.NF_Group_Segment_Key__c</members>
         <members>SBQQ__Subscription__c.NF_Group_Segment_Index__c</members>
+		<members>SBQQ__Subscription__c.NF_Group_Segment_label__c</members>
 		<members>SBQQ__Subscription__c.NF_Renewal_Escalation__c</members>
 		<members>SBQQ__Subscription__c.NF_ARE_Subscription__c</members>
+		<members>OrderItem.NF_Group_Segment_Index__c</members>
+		<members>OrderItem.NF_Group_Segment_Key__c</members>
+		<members>OrderItem.NF_Group_Segment_Label__c</members>
 		<members>SBQQ__CustomScript__c.NF_External_Id__c</members>
 		<name>CustomField</name>
     </types>

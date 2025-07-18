@@ -2015,7 +2015,7 @@
     <description>Standard user permissions across all Neuraflash fields &amp; Salesforce CPQ objects.</description>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Account.NF_Billing_Contact__c</field>
+        <field>Account.NF_Accounting_Contact__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2365,6 +2365,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contract.NF_Number_of_Active_Subscriptions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contract.NF_Renewal_Uplift_Rate__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2591,6 +2596,21 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.SBQQ__SubscriptionType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.NF_Accounting_Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.NF_Debook_Auto_Renew__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Order.NF_Renewal_Uplift_Rate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7151,6 +7171,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>SBQQ__Subscription__c.NF_Group_Segment_Key__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SBQQ__Subscription__c.NF_Group_Segment_Label__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

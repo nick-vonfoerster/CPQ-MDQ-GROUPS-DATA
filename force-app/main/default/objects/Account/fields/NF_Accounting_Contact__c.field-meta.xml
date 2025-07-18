@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>NF_Billing_Contact__c</fullName>
+    <fullName>NF_Accounting_Contact__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>ES-25753</description>
     <label>Billing Contact</label>
