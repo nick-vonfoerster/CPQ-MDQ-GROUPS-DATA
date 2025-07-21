@@ -3,35 +3,67 @@
     <apiVersion>62.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
-        <name>Assign_ARE_Renewal_Price</name>
-        <label>Assign ARE Renewal Price</label>
-        <locationX>270</locationX>
-        <locationY>947</locationY>
+        <name>Assign_ARE_Subscription_False</name>
+        <label>Assign ARE Subscription = False</label>
+        <locationX>138</locationX>
+        <locationY>1895</locationY>
         <assignmentItems>
-            <assignToReference>Loop_ARE_Subscriptions.SBQQ__RenewalPrice__c</assignToReference>
-            <operator>Assign</operator>
+            <assignToReference>ARESubscriptionFalse</assignToReference>
+            <operator>Add</operator>
             <value>
-                <elementReference>Loop_ARE_Subscriptions.SBQQ__NetPrice__c</elementReference>
+                <elementReference>Loop_ARE_Subscriptions_False</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Assign_ARE_Subscription</targetReference>
+            <targetReference>Loop_ARE_Subscriptions_False</targetReference>
         </connector>
     </assignments>
     <assignments>
-        <name>Assign_ARE_Subscription</name>
-        <label>Assign ARE Subscription</label>
-        <locationX>270</locationX>
-        <locationY>1055</locationY>
+        <name>Assign_ARE_Subscription_False_Renewal_Price</name>
+        <label>Assign ARE Subscription = False Renewal Price</label>
+        <locationX>138</locationX>
+        <locationY>1787</locationY>
         <assignmentItems>
-            <assignToReference>ARESubscription</assignToReference>
-            <operator>Add</operator>
+            <assignToReference>Loop_ARE_Subscriptions_False.SBQQ__RenewalPrice__c</assignToReference>
+            <operator>Assign</operator>
             <value>
-                <elementReference>Loop_ARE_Subscriptions</elementReference>
+                <elementReference>Get_ARE_Subscription_True_Net_Price.SBQQ__NetPrice__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop_ARE_Subscriptions</targetReference>
+            <targetReference>Assign_ARE_Subscription_False</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_ARE_Subscription_True</name>
+        <label>Assign ARE Subscription = True</label>
+        <locationX>270</locationX>
+        <locationY>1055</locationY>
+        <assignmentItems>
+            <assignToReference>ARESubscriptionTrue</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_ARE_Subscriptions_True</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_ARE_Subscriptions_True</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_ARE_Subscription_True_Renewal_Price</name>
+        <label>Assign ARE Subscription = True Renewal Price</label>
+        <locationX>270</locationX>
+        <locationY>947</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_ARE_Subscriptions_True.SBQQ__RenewalPrice__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_ARE_Subscriptions_True.SBQQ__NetPrice__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_ARE_Subscription_True</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -43,7 +75,7 @@
             <assignToReference>LastGroupID</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Loop_Last_Subscriptions.SBQQ__ProductId__c</elementReference>
+                <elementReference>Loop_Last_Subscriptions.SBQQ__ProductOption__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -54,7 +86,7 @@
         <name>Assign_Renewal_Price</name>
         <label>Assign Renewal Price</label>
         <locationX>270</locationX>
-        <locationY>1871</locationY>
+        <locationY>2603</locationY>
         <assignmentItems>
             <assignToReference>Loop_Subscriptions.SBQQ__RenewalPrice__c</assignToReference>
             <operator>Assign</operator>
@@ -70,12 +102,12 @@
         <name>Assign_Renewal_Price_2</name>
         <label>Assign Renewal Price (2)</label>
         <locationX>534</locationX>
-        <locationY>1979</locationY>
+        <locationY>2711</locationY>
         <assignmentItems>
             <assignToReference>Loop_Subscriptions.SBQQ__RenewalPrice__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Get_Latest_Subscription.SBQQ__NetPrice__c</elementReference>
+                <elementReference>Get_Latest_Non_ARE_Subscription.SBQQ__NetPrice__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -86,7 +118,7 @@
         <name>Collection_of_Subscription</name>
         <label>Collection of Subscription</label>
         <locationX>402</locationX>
-        <locationY>2171</locationY>
+        <locationY>2903</locationY>
         <assignmentItems>
             <assignToReference>Subscriptions</assignToReference>
             <operator>Add</operator>
@@ -111,14 +143,14 @@
             <name>Yes</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>ARESubscription</leftValueReference>
+                <leftValueReference>ARESubscriptionTrue</leftValueReference>
                 <operator>IsEmpty</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_ARE_Subscriptions</targetReference>
+                <targetReference>Update_ARE_Subscriptions_True</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -127,9 +159,9 @@
         <name>Evaluate_End_Date</name>
         <label>Evaluate End Date</label>
         <locationX>402</locationX>
-        <locationY>1763</locationY>
+        <locationY>2495</locationY>
         <defaultConnector>
-            <targetReference>Get_Latest_Subscription</targetReference>
+            <targetReference>Get_Latest_Non_ARE_Subscription</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Contract End Date NOT EQUAL Subscription End Date</defaultConnectorLabel>
         <rules>
@@ -152,7 +184,7 @@
         <name>Subscriptions_Present</name>
         <label>Subscriptions Present</label>
         <locationX>182</locationX>
-        <locationY>2363</locationY>
+        <locationY>3095</locationY>
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
             <name>Yes_Subscripton_Null</name>
@@ -165,7 +197,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_Subscriptions</targetReference>
+                <targetReference>Update_Non_ARE_Subscriptions</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -175,14 +207,28 @@
     <interviewLabel>Subscription: Update Renewal Price {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Subscription: Update Renewal Price</label>
     <loops>
-        <name>Loop_ARE_Subscriptions</name>
-        <label>Loop ARE Subscriptions</label>
-        <locationX>182</locationX>
-        <locationY>839</locationY>
-        <collectionReference>Get_ARE_Subscription_from_Contract</collectionReference>
+        <name>Loop_ARE_Subscriptions_False</name>
+        <label>Loop ARE Subscriptions = False</label>
+        <locationX>50</locationX>
+        <locationY>1571</locationY>
+        <collectionReference>Get_ARE_Subscription_False_from_Contract</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>Assign_ARE_Renewal_Price</targetReference>
+            <targetReference>Get_ARE_Subscription_True_Net_Price</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_ARE_Subscriptions_False</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_ARE_Subscriptions_True</name>
+        <label>Loop ARE Subscriptions = True</label>
+        <locationX>182</locationX>
+        <locationY>839</locationY>
+        <collectionReference>Get_ARE_Subscription_True_from_Contract</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_ARE_Subscription_True_Renewal_Price</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
             <targetReference>ARE_Subscription_Present</targetReference>
@@ -199,14 +245,14 @@
             <targetReference>Assign_LastGroupProductID</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Get_ARE_Subscription_from_Contract</targetReference>
+            <targetReference>Get_ARE_Subscription_True_from_Contract</targetReference>
         </noMoreValuesConnector>
     </loops>
     <loops>
         <name>Loop_Subscriptions</name>
         <label>Loop Subscriptions</label>
         <locationX>182</locationX>
-        <locationY>1655</locationY>
+        <locationY>2387</locationY>
         <collectionReference>Get_Non_ARE_Subscription_from_Contract</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -236,13 +282,13 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordLookups>
-        <name>Get_ARE_Subscription_from_Contract</name>
-        <label>Get ARE Subscription from Contract</label>
-        <locationX>182</locationX>
-        <locationY>731</locationY>
+        <name>Get_ARE_Subscription_False_from_Contract</name>
+        <label>Get ARE Subscription = False from Contract</label>
+        <locationX>50</locationX>
+        <locationY>1463</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Loop_ARE_Subscriptions</targetReference>
+            <targetReference>Loop_ARE_Subscriptions_False</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -253,7 +299,7 @@
             </value>
         </filters>
         <filters>
-            <field>SBQQ__Product__c</field>
+            <field>SBQQ__ProductOption__c</field>
             <operator>NotIn</operator>
             <value>
                 <elementReference>LastGroupID</elementReference>
@@ -267,6 +313,78 @@
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SBQQ__Subscription__c</object>
+        <sortField>SBQQ__SubscriptionEndDate__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_ARE_Subscription_True_from_Contract</name>
+        <label>Get ARE Subscription = True from Contract</label>
+        <locationX>182</locationX>
+        <locationY>731</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_ARE_Subscriptions_True</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Contract__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SBQQ__ProductOption__c</field>
+            <operator>NotIn</operator>
+            <value>
+                <elementReference>LastGroupID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>NF_ARE_Subscription__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SBQQ__Subscription__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_ARE_Subscription_True_Net_Price</name>
+        <label>Get ARE Subscription = True Net Price</label>
+        <locationX>138</locationX>
+        <locationY>1679</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_ARE_Subscription_False_Renewal_Price</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Contract__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SBQQ__ProductOption__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_ARE_Subscriptions_False.SBQQ__ProductOption__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>NF_ARE_Subscription__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>SBQQ__Subscription__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
@@ -299,10 +417,10 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>Get_Latest_Subscription</name>
-        <label>Get Latest Subscription</label>
+        <name>Get_Latest_Non_ARE_Subscription</name>
+        <label>Get Latest Non-ARE Subscription</label>
         <locationX>534</locationX>
-        <locationY>1871</locationY>
+        <locationY>2603</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Assign_Renewal_Price_2</targetReference>
@@ -316,10 +434,10 @@
             </value>
         </filters>
         <filters>
-            <field>SBQQ__Product__c</field>
+            <field>SBQQ__ProductOption__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>Loop_Subscriptions.SBQQ__Product__c</elementReference>
+                <elementReference>Loop_Subscriptions.SBQQ__ProductOption__c</elementReference>
             </value>
         </filters>
         <filters>
@@ -339,7 +457,7 @@
         <name>Get_Non_ARE_Subscription_from_Contract</name>
         <label>Get Non-ARE Subscription from Contract</label>
         <locationX>182</locationX>
-        <locationY>1547</locationY>
+        <locationY>2279</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_Subscriptions</targetReference>
@@ -353,7 +471,7 @@
             </value>
         </filters>
         <filters>
-            <field>SBQQ__Product__c</field>
+            <field>SBQQ__ProductOption__c</field>
             <operator>In</operator>
             <value>
                 <elementReference>LastGroupID</elementReference>
@@ -364,20 +482,30 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
-        <name>Update_ARE_Subscriptions</name>
-        <label>Update ARE Subscriptions</label>
+        <name>Update_ARE_Subscriptions_False</name>
+        <label>Update ARE Subscriptions False</label>
         <locationX>50</locationX>
-        <locationY>1355</locationY>
+        <locationY>2087</locationY>
         <connector>
             <targetReference>Get_Non_ARE_Subscription_from_Contract</targetReference>
         </connector>
-        <inputReference>ARESubscription</inputReference>
+        <inputReference>ARESubscriptionFalse</inputReference>
     </recordUpdates>
     <recordUpdates>
-        <name>Update_Subscriptions</name>
-        <label>Update Subscriptions</label>
+        <name>Update_ARE_Subscriptions_True</name>
+        <label>Update ARE Subscriptions True</label>
         <locationX>50</locationX>
-        <locationY>2471</locationY>
+        <locationY>1355</locationY>
+        <connector>
+            <targetReference>Get_ARE_Subscription_False_from_Contract</targetReference>
+        </connector>
+        <inputReference>ARESubscriptionTrue</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Non_ARE_Subscriptions</name>
+        <label>Update Non-ARE Subscriptions</label>
+        <locationX>50</locationX>
+        <locationY>3203</locationY>
         <inputReference>Subscriptions</inputReference>
     </recordUpdates>
     <start>
@@ -392,7 +520,15 @@
     </start>
     <status>Active</status>
     <variables>
-        <name>ARESubscription</name>
+        <name>ARESubscriptionFalse</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SBQQ__Subscription__c</objectType>
+    </variables>
+    <variables>
+        <name>ARESubscriptionTrue</name>
         <dataType>SObject</dataType>
         <isCollection>true</isCollection>
         <isInput>false</isInput>
