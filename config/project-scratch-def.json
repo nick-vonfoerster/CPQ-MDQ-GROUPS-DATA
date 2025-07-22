@@ -1,8 +1,11 @@
 {
   "orgName": "nick.vonfoerster company",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "features": ["EnableSetPasswordInApi", "MultiCurrency"],
   "settings": {
+    "currencySettings":{
+      "enableMultiCurrency": true
+    },
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },

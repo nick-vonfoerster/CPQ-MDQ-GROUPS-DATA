@@ -6,6 +6,8 @@
 		<members>Contract.NF_Accounting_Contact__c</members>
 		<members>Contract.NF_Debook_Auto_Renew__c</members>
 		<members>Contract.NF_Renewal_Uplift_Rate__c</members>
+		<members>Contract.NF_Number_of_Active_Subscriptions__c</members>
+		<members>Contract.NF_ARE_Subscription_Present__c</members>
 		<members>Order.NF_Accounting_Contact__c</members>
 		<members>Order.NF_Debook_Auto_Renew__c</members>
 		<members>Order.NF_Renewal_Uplift_Rate__c</members>
@@ -14,6 +16,7 @@
 		<members>Opportunity.NF_Default_Escalation__c</members>
 		<members>Opportunity.NF_Primary_Contact_Name__c</members>
 		<members>Opportunity.NF_Primary_Contact__c</members>
+		<members>Opportunity.NF_ARE_Contract__c</members>
 		<members>SBQQ__PriceAction__c.NF_External_Id__c</members>
 		<members>SBQQ__PriceCondition__c.NF_External_Id__c</members>
 		<members>SBQQ__PriceRule__c.NF_External_Id__c</members>
@@ -50,9 +53,12 @@
         <members>SBQQ__Subscription__c.NF_Subscription_Renewal_End_Date__c</members>
         <members>SBQQ__Subscription__c.NF_Group_Segment_Key__c</members>
         <members>SBQQ__Subscription__c.NF_Group_Segment_Index__c</members>
-		<members>SBQQ__Subscription__c.NF_Group_Segment_label__c</members>
+		<members>SBQQ__Subscription__c.NF_Group_Segment_Label__c</members>
+		<members>SBQQ__Subscription__c.NF_Line_Number__c</members>
 		<members>SBQQ__Subscription__c.NF_Renewal_Escalation__c</members>
 		<members>SBQQ__Subscription__c.NF_ARE_Subscription__c</members>
+		<members>SBQQ__Subscription__c.NF_ARE_Evaluated__c</members>
+		<members>SBQQ__Subscription__c.NF_Bundle_Header_Product__c</members>
 		<members>OrderItem.NF_Group_Segment_Index__c</members>
 		<members>OrderItem.NF_Group_Segment_Key__c</members>
 		<members>OrderItem.NF_Group_Segment_Label__c</members>
@@ -77,6 +83,7 @@
 		<members>NF_Quote_Renewal_Calculation_Update</members>
 		<members>NF_Quote_Renewal_Grouped_Quote_Creation</members>
 		<members>NF_Subscription_Update_Renewal_Price</members>
+		<members>NF_Contract_ARE_Generation</members>
 		<name>Flow</name>
 	</types>
 	<types>
