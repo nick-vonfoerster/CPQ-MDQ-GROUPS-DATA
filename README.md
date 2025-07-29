@@ -21,15 +21,16 @@ Developer setup (manual)
 * pull your dev branch (remote -> local)
 * Setup project-scratch-def.json file - Example below (Need multi-currency enabled)
 ====================================================================
+
 {
   "orgName": “your company",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi", "MultiCurrency"],
   "settings": {
-    "currencySettings":{
+  "currencySettings":{
       "enableMultiCurrency": true
     },
-    "lightningExperienceSettings": {
+  "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
     "mobileSettings": {
@@ -37,6 +38,7 @@ Developer setup (manual)
     }
   }
 }
+
 ====================================================================
 * Create your DE Scratch Org (SO)
     1. Command + Shift + P
@@ -49,14 +51,15 @@ Developer setup (manual)
 * Post Install Config Setup
 
 Installing Managed Packages in your Scratch Org (SO)
-* sfdx force:package:install --package <package id> -w <expiration # of days> -o <org alias> 
+* sfdx force:package:install --package [package id] -w [expiration # of days] -o [org alias]
     * Salesforce CPQ Package ID: 04t6T000000t6RQQAY (Package version Summer '25 v256.0)
         * If another version needs to be installed navigate to https://install.steelbrick.com/ > Right click on the Production or Sandbox links and copy the link > paste the link into a notepad and retrieve the ID from the URL
 * QLGAmendRenew Package ID: 04tHs000000G0DwIAK
 * Navigate Everywhere Package ID: 04t5G000003rUhrQAE
 
 Post Install Configuration
-        * Post Install, you must Authorize new calculation service. This step requires logging and performing the following step: Setup > Installed Packages > Salesforce CPQ Configure > Pricing and Calculation > Click Authorize new calculation service**
+        
+        * Post Install, you must Authorize new calculation service. This step requires logging and performing the following step: Setup > Installed Packages > Salesforce CPQ Configure > Pricing and Calculation > Click Authorize new calculation service
             * If “Use Integration User for Calculations” is true, uncheck the setting > Save > then authorize calculation service
         * Further CPQ Configurations after authorizing calculation service
             * Line Editor:
@@ -84,9 +87,9 @@ Assign the following permission sets to your default org User.
 * sfdx force:user:permset:assign --permsetname SBQQ__SteelBrickCPQUser
 
 Push Data/Metadata
-* PACKAGE.XML: sf project deploy start -x manifest/package.xml -o <org alias>   
-* PRICE RULES: sfdx force:data:tree:import -o <org alias> -p "./data/SBQQ__PriceRule__c-SBQQ__PriceCondition__c-SBQQ__PriceAction__c-plan.json" 
-* CUSTOM SCRIPT: sfdx force:data:tree:import -o <org alias> -f “./data/SBQQ__CustomScript__c.json”   
+* PACKAGE.XML: sf project deploy start -x manifest/package.xml -o [org alias]   
+* PRICE RULES: sfdx force:data:tree:import -o [org alias] -p "./data/SBQQ__PriceRule__c-SBQQ__PriceCondition__c-SBQQ__PriceAction__c-plan.json" 
+* CUSTOM SCRIPT: sfdx force:data:tree:import -o [org alias] -f “./data/SBQQ__CustomScript__c.json”   
     * Post installation of the custom script you will need to navigate to Setup > Installed Packages > Plugins
         * Quote Calculator Plugin: QuoteLine Escalation - KB4
         * QLE Custom Action Plugin: Clone Line Script   
